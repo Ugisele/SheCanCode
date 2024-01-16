@@ -22,12 +22,17 @@ body {
     }
 }
 
+/* .wrap-bar {
+    position: fixed;
+} */
 
 .br {
-    position: absolute;
+
     display: inline-block;
     color: #000000;
     text-decoration: none;
+    /* float: left; */
+    position: relative;
 
 }
 
@@ -36,6 +41,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    float: right;
 
 }
 
@@ -99,6 +105,7 @@ h2 {
 
 .projects h3 {
     font-size: 30px;
+    padding: 3px;
 }
 
 .about h3 {
