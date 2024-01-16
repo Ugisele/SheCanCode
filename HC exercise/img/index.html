@@ -11,33 +11,83 @@
 </head>
 
 <body>
+    <div class="wrap-bar">
 
-    <div class="container">
+        <ul>
+            <a href="#home" class="br"> <b>BR</b> Architect</a>
+            <li><a href="#news">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </div>
+    <div class="container-home">
         <div class="home">
-            <h2>BR Architects</h2>
+            <!-- <img src="bg1.jpg" alt="Architects" height="1000px" width="1200px"> -->
+            <h2> <span id="home"><b> BR </b></span> Architects</h2>
+
         </div>
     </div>
 
-    <div class="container">
-        <div class="projects">
-            <h3>Projects</h3>
-        </div>
-        <div class="column-3">
-            <img src="div1.jpg" alt="SUMMER HOUSE">
-        </div>
-        <div class="column-3">
-            <img src="div2.jpg" alt="SUMMER HOUSE">
-        </div>
-        <div class="column-3">
-            <img src="div3.jpg" alt="SUMMER HOUSE">
-        </div>
-        <div class="column-3">
-            <img src="div4.jpg" alt="SUMMER HOUSE">
-        </div>
 
+
+    <div class="projects">
+        <h3>Projects</h3>
+    </div>
+    <div class="container-grid">
+        <div class="row">
+            <div class="col-3">
+                <div class="sub" style="background-image: url(div1.jpg); width: 300px;height: 200px;">
+                    <h5>SUMMER HOUSE</h5>
+                </div>
+                <!-- <img src="div3.jpg" alt="SUMMER HOUSE" style="width: 200%;"> -->
+
+            </div>
+            <div class="col-3">
+                <div class="sub" style="background-image: url(div2.jpg); width: 300px;height: 200px;">
+                    <h5>BRICK HOUSE</h5>
+                </div>
+
+            </div>
+            <div class="col-3">
+                <div class="sub" style="background-image: url(div3.jpg); width: 300px;height: 200px;">
+                    <h5>RENOVATED</h5>
+                </div>
+
+            </div>
+            <div class="col-3">
+                <div class="sub" style="background-image: url(div4.jpg); width: 300px;height: 200px;">
+                    <h5>BRICK HOUSE</h5>
+                </div>
+
+            </div>
+            <div class="col-3">
+                <div class="sub" style="background-image: url(div3.jpg); width: 300px;height: 200px;">
+                    <h5>RENOVATED HOUSE</h5>
+                </div>
+
+            </div>
+            <div class="col-3">
+                <div class="sub" style="background-image: url(div4.jpg); width: 300px;height: 200px;">
+                    <h5>BRICK HOUSE</h5>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="sub" style="background-image: url(div2.jpg); width: 300px;height: 200px;">
+                    <h5>SUMMER HOUSE</h5>
+                </div>
+
+            </div>
+            <div class="col-3">
+                <div class="sub" style="background-image: url(div1.jpg); width: 300px;height: 200px;">
+                    <h5>SUMMER HOUSE</h5>
+                </div>
+            </div>
+
+        </div>
     </div>
 
     <div class="about">
+        <h3>About</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -50,64 +100,75 @@
             nostrud exercitation
             ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-        <div class="colomn">
-            <img src="team1.jpg" alt="CEO & FOUNDER">
-            <h3>John Doe</h3>
-            <p>Phasellus eget enim eu lectus faucibus vestibulum.
-                Suspendisse sodales pellentesque elementum</p>
-            <button type="button">contact</button>
-        </div>
-        <div class="colomn">
-            <img src="team4.jpg" alt="CEO & FOUNDER">
-            <h3>John Doe</h3>
-            <p>Phasellus eget enim eu lectus faucibus vestibulum.
-                Suspendisse sodales pellentesque elementum</p>
-            <button type="button">contact</button>
-        </div>
-        <div class="colomn">
-            <img src="team2.jpg" alt="CEO & FOUNDER">
-            <h3>John Doe</h3>
-            <p>Phasellus eget enim eu lectus faucibus vestibulum.
-                Suspendisse sodales pellentesque elementum</p>
-            <button type="button">contact</button>
-        </div>
-        <div class="colomn">
-            <img src="team3.jpg" alt="CEO & FOUNDER">
-            <h3>John Doe</h3>
-            <p>Phasellus eget enim eu lectus faucibus vestibulum.
-                Suspendisse sodales pellentesque elementum</p>
-            <button type="button">contact</button>
+        <div class="row">
+            <div class="card">
+                <img src="team1.jpg" alt="CEO & FOUNDER" style="width: 100%;">
+                <h3>John Doe</h3>
+                <P>Architect</P>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum.
+                    Suspendisse sodales pellentesque elementum</p>
+                <button type="submit" class="btn">contact</button>
+            </div>
+            <div class="card">
+                <img src="team4.jpg" alt="CEO & FOUNDER" style="width: 100%;">
+                <h3>Jane Doe</h3>
+                <P>Architect</P>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum.
+                    Suspendisse sodales pellentesque elementum</p>
+                <button type="button" class="btn">contact</button>
+            </div>
+            <div class="card">
+                <img src="team2.jpg" alt="CEO & FOUNDER" style="width: 100%;">
+                <h3>Dan Star</h3>
+                <P>Architect</P>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum.
+                    Suspendisse sodales pellentesque elementum</p>
+                <button type="button" class="btn">contact</button>
+            </div>
+            <div class="card">
+                <img src="team3.jpg" alt="CEO & FOUNDER" style="width: 100%;">
+                <h3>John Doe</h3>
+                <P>Architect</P>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum.
+                    Suspendisse sodales pellentesque elementum</p>
+                <button type="button" class="btn">contact</button>
+            </div>
         </div>
     </div>
 
     <div class="contact">
-        <form action="">
-            <label for="Name"> name
-                <input type="text">
+        <h3>Contact</h3>
+        <p>lets get in touch and talk about something</p>
+        <form target="_blank">
+            <label for="Name">
+                <input type="text" placeholder="name" required name="Name"> <br>
             </label>
-            <label for="email"> type your email
-                <input type="email">
+            <label for="email">
+                <input type="email" placeholder="email" required name="type your email"> <br>
             </label>
-            <label for="subject"> subject
-                <input type="text">
+            <label for="subject">
+                <input type="text" placeholder="subject" required name="subject"><br>
             </label>
-            <label for="comment"> comment
-                <input type="text">
+            <label for="comment">
+                <input type="text" placeholder="comment" required name="comment"><br>
             </label>
-        </form>
 
-        <button type="button">SEND MESSAGE</button>
+
+            <button type="button">SEND MESSAGE</button>
+        </form>
     </div>
 
     <map name="our zone">
-        <img src="map.jpg" alt="">
+        <img src="map.jpg" alt="" style="width: 100%;">
     </map>
 
     <footer>
-        <p>
-        <h6> Copy from W3SCHOOL </h6>
-        </p>
+
+        <h4> Copy from W3SCHOOL </h4>
+
     </footer>
+
+    </div>
 </body>
 
 </html>
