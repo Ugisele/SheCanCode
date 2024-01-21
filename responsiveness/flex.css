@@ -1,0 +1,31 @@
+* {
+    margin: 1px;
+    padding: 1px;
+    box-sizing: border-box;
+    background-color: aquamarine;
+}
+
+nav {
+    background-color: blue;
+}
+
+nav ul {
+    background-color: transparent;
+    list-style-type: none;
+    display: inline block;
+    width: auto;
+
+
+}
+
+nav ul li {
+    justify-content: space-between;
+    /* text-decoration: none; */
+    padding: auto;
+
+}
+
+nav ul li a {
+    display: block;
+    justify-content: space-between;
+}

@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 3px;
+    background-color: blanchedalmond;
+}
+
+@media (width > 768px) {
+    .container {
+        flex-wrap: nowrap;
+        background-color: red;
+
+    }
+
+}
+
+@media (width > 488px) {
+    .boxes {
+        width: 100%;
+    }
+}
+
+.hello h1 {
+    background-color: rgb(0, 255, 17);
+    padding: 1px;
+    margin: 3px;
+    color: #000;
+
+}
+
+.container {
+    background-color: blueviolet;
+    display: flex;
+    padding: 1px;
+    margin: 3px;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 10px;
+
+
+    /* height: 50%; */
+
+}
+
+#boxes {
+    background-color: brown;
+    border: 1px solid black;
+    width: 20%;
+    height: 100px;
+}
