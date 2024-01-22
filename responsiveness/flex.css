@@ -1,31 +1,199 @@
 * {
-    margin: 1px;
-    padding: 1px;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    background-color: aquamarine;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    /* width: 100%; */
+    max-width: 1000px;
+    margin: auto;
 }
 
-nav {
-    background-color: blue;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    width: 100%;
 }
 
-nav ul {
-    background-color: transparent;
-    list-style-type: none;
-    display: inline block;
+header .sidenav {
+    width: 35%;
+    height: 30px;
+    cursor: pointer;
+}
+
+header .sidenav img {
+    width: 50%;
+    height: 40px;
+}
+
+header h1 {
+    font-size: 30px !important;
+
+}
+
+#nav {
+    position: absolute;
+    font-size: 25px;
+    width: 40%;
+    min-width: 300px;
+    top: 0;
+    left: -40vw;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    padding: 5px;
+    margin-top: 100px;
+
+}
+
+.container .food-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.container .food-menu img {
+
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.paging{ 
+    display: inline-block;
+    margin: 20px 50px;
+    padding: 50px; 
+    align-items: center;
+}
+.paging a{
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    justify-content: center;
+}
+.paging a .active{
+    color: white;
+    background-color: black!important;
+
+}
+.paging a:hover{
+    background-color: black;
+    color: white;
+}
+.paging a:hover.active{
+    background-color: rgb(220, 202, 202);
+}
+
+
+
+
+.about {
+    width: fit-content;
+    margin: 100px;
+    padding: 20px;
+}
+
+.about h3 {
+    font-size: 25px;
+    margin: 10px;
+
+}
+
+.chef {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 80px;
+    width: 80%;
+}
+
+.chef h3 {
+    font-size: 25px;
+    margin: 10px;
+}
+
+.footer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin: 0px;
+    gap: 20px;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.one {
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+    /* height: 100%; */
+}
+
+.footer-footer {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+    height: fit-content;
+}
+
+.one img {
+    width: 50px;
+    height: 50px;
+}
+
+.two {
+    width: auto;
+    height: auto;
+    /* display: flex; */
+}
+
+.pop {
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* width: 40%; */
+    /* gap: 5px; */
+    margin: 0;
+}
+
+.pop .butt p {
+    
+    margin: 0;
+
+}
+.butt{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    
+    
+}
+#butt{
+    background-color: rgb(144, 138, 138);
+    color: white;
     width: auto;
 
-
+}
+.b-1{
+    background-color: black!important;
 }
 
-nav ul li {
-    justify-content: space-between;
-    /* text-decoration: none; */
-    padding: auto;
-
-}
-
-nav ul li a {
-    display: block;
-    justify-content: space-between;
+.posts {
+    margin: 0;
 }

@@ -10,81 +10,92 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li>
-                <a href="#">My food</a>
-            </li>
-            <li>
-                <a href=""> Mail</a>
-            </li>
-            <li>
-                <button class="toggle">
 
+    <header>
+        <div class="sidenav" onclick="menu_open()">
+            ☰
+            <nav id="nav">
+                <ul>
+                    <li class="show-hide"><a href="#"> Close Menu</a></li>
+                    <li class="show-hide"><a href="#">Food</a></li>
+                    <li class="show-hide"><a href="#">About</a></li>
+                </ul>
 
-                </button>
-            </li>
-        </ul>
-    </nav>
-
-    <div class="container">
-        <div class="food-menu">
-            <img src="img/cherries.jpg" alt="cherries">
-            <h3>The Perfect Sandwich, A Real NYC Classic</h3>
-            <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
+            </nav>
         </div>
 
-        <div class="food-menu">
-            <img src="img/salmon.jpg" alt="">
-            <h3>Once Again, Robust Wine and Vegetable Pasta/h3>
+
+        <h1 id="navfood">My Food</h1>
+        <h1>Mail</h1>
+    </header>
+    <section>
+        <div class="container">
+            <div class="food-menu">
+                <img src="img/cherries.jpg" alt="cherries">
+                <h3>The Perfect Sandwich, A Real NYC Classic</h3>
                 <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
-        </div>
-        <div class="food-menu">
-            <img src="img/popsicle.jpg" alt="">
-            <h3>All I Need Is a Popsicle</h3>
-            <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
-        </div>
-        <div class="food-menu">
-            <img src="img/sandwich.jpg" alt="cherries">
-            <h3>Salmon For Your Skin</h3>
-            <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
-        </div>
+            </div>
 
-        <div class="food-menu">
-            <img src="img/steak.jpg" alt="">
-            <h3>Le French</h3>
-            <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
-        </div>
-        <div class="food-menu">
-            <img src="img/sandwich.jpg" alt="">
-            <h3>The Perfect Sandwich, A Real NYC Classic</h3>
-            <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
-        </div>
-        <div class="food-menu">
-            <img src="img/steak.jpg" alt="cherries">
-            <h3>Let Me Tell You About This Steak</h3>
-            <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
-        </div>
+            <div class="food-menu">
+                <img src="img/salmon.jpg" alt="">
+                <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+                <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
+            </div>
+            <div class="food-menu">
+                <img src="img/popsicle.jpg" alt="">
+                <h3>All I Need Is a Popsicle</h3>
+                <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
+            </div>
+            <div class="food-menu">
+                <img src="img/sandwich.jpg" alt="cherries">
+                <h3>Salmon For Your Skin</h3>
+                <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="container"> -->
+            <div class="food-menu">
+                <img src="img/steak.jpg" alt="">
+                <h3>Le French</h3>
+                <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
+            </div>
+            <div class="food-menu">
+                <img src="img/sandwich.jpg" alt="">
+                <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+                <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
+            </div>
+            <div class="food-menu">
+                <img src="img/steak.jpg" alt="cherries">
+                <div>
+                    <h3>Let Me Tell You About This Steak</h3>
+                    <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
+                </div>
+            </div>
 
-        <div class="food-menu">
-            <img src="img/wine.jpg" alt="">
-            <h3>Cherries, interrupted</h3>
-            <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
-        </div>
+            <div class="food-menu">
+                <img src="img/wine.jpg" alt="">
+                <h3>Cherries, interrupted</h3>
+                <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
+            </div>
 
-    </div>
-    <div class="menu">
-        <div class="number"></div>
-        <div class="number">1</div>
-        <div class="number">2</div>
-        <div class="number">3</div>
-        <div class="number">4</div>
-        <div class="number"></div>
-    </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="paging">
+            <a href="#">&laquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">&raquo;</a>
+           
+        </div>
+    </section>
+
     <section>
         <div class="about">
             <h3>About Me, The Food Man</h3>
-            <img src="img/chef.jpg" alt="">
+            <img src="img/chef.jpg" alt="" width="100%">
         </div>
         <div class="chef">
             <h3>I am Who I Am!</h3>
@@ -101,28 +112,59 @@
 
         </div>
     </section>
-    <section>
-        <footer>
-            <div>
-                <h3>Footer</h3>
-                <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest
-                    of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed
-                    tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non
-                    fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+    
+        <div class="footer">
+            <div class="footer-footer">
+                <h3>FOOTER</h3>
+                <p>Just me, myself and I, exploring the universe of unknownment.
                     ultricies congue gravida diam non fringilla.</p>
+                <h6>powered by <a href="w3.css">w3.css</a></h6>
             </div>
-            <div>
+            <div class="blog">
                 <h3>BLOG POSTS</h3>
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-            <div>
-                <h3>POPULAR TAGS</h3>
-                <div></div>
-            </div>
+                <div class="posts">
+                    <div class="one">
+                        <img src="img/salmon.jpg" >
+                        <div class="two">
+                            <h5>Lorem</h5>
+                            <p>Just me, myself and I, exploring the universe</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="one">
+                        <img src="img/cherries.jpg">
+                        <div class="two">
+                            <h5>Lorem</h5>
+                            <p>Just me, myself and I, exploring the universe </p>
+                        </div>
+                
+                    </div>
+ 
+                </div>
 
-        </footer>
-    </section>
+            </div>
+            <div class="pop">
+                <h3>POPULAR TAGS</h3> <br>
+
+                <div class="butt">
+                <p id="butt" class="b-1">Food</p>
+                <p id="butt">Tea</p> 
+                <p id="butt">Dish</p>
+                <p id="butt">newyork</p>
+                <p id="butt">Dinner</p>
+                <p id="butt">Kigali</p>
+                <p id="butt">Fish</p>
+                <p id="butt">Duck</p>
+                <p id="butt">Cuisene</p>
+                <p id="butt">Ideas</p>
+            </div>
+        </div>
+        
+
+        </div>
+    
+
+    <script src="script.js"></script>
 
 </body>
 
