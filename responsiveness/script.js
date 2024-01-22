@@ -1,8 +1,9 @@
-function menu_exit() {
-    document.getElementsByClassName("show-hide").style.display = "absolute";
-}
+var nav = document.getElementsById("nav");
 function menu_open() {
-    document.getElementsByClassName("show-hide").style.display =
-        "none";
+    nav.style.display =
+        "block";
 
+}
+function menu_exit() {
+    nav.style.display = "none";
 }

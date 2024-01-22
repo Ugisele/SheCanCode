@@ -4,19 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="flex.css">
+    <title>Document</title>
 
 </head>
 
 <body>
 
     <header>
-        <div class="sidenav" onclick="menu_open()">
-            ☰
+        <div class="sidenav" >
+            <a onclick="menu_open()">☰</a>
+            
             <nav id="nav">
-                <ul>
-                    <li class="show-hide"><a href="#"> Close Menu</a></li>
+                <ul >
+                    <li class="show-hide" onclick="menu_exit()"> Close Menu</li>
                     <li class="show-hide"><a href="#">Food</a></li>
                     <li class="show-hide"><a href="#">About</a></li>
                 </ul>
@@ -83,7 +84,7 @@
     <section>
         <div class="paging">
             <a href="#">&laquo;</a>
-            <a href="#" class="active">1</a>
+            <a href="#food" class="active">1</a>
             <a href="#">2</a>
             <a href="#">3</a>
             <a href="#">4</a>
@@ -95,7 +96,7 @@
     <section>
         <div class="about">
             <h3>About Me, The Food Man</h3>
-            <img src="img/chef.jpg" alt="" width="100%">
+            <img src="img/chef.jpg" alt="" >
         </div>
         <div class="chef">
             <h3>I am Who I Am!</h3>
