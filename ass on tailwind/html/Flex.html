@@ -11,23 +11,23 @@
 
 <body>
 
-    <header class="flex bg-white fixed flex-row">
-        <div class="hidden">
-            <a>☰</a>
+    <header class="flex justify-between bg-white fixed flex-row w-[99%] top-0 h-[50px]">
+        <div class="cursor-pointer pl-[50px] hover:translate-x-[-200%] transition[3s] before:translate-x-0[-120%] before:'\food'">
+
+                ☰
             
-            <nav id="nav">
+            <nav class=" hover:translate-x-[-200%] transition[3s] before:translate-x-0[-120%] left-0">
                 <ul >
-                    <li class="show-hide"> Close Menu</li>
-                    <li class="show-hide"><a href="#">Food</a></li>
-                    <li class="show-hide"><a href="#">About</a></li>
+                    <li class="flex flex-nowrap text-lg hover:bg-cyan-600 left-0 p-[5px]"> Close Menu</li>
+                    <li class="flex flex-nowrap text-lg hover:bg-cyan-600 left-0 p-[5px]">Food</li>
+                    <li class="flex flex-nowrap text-lg hover:bg-cyan-600 left-0 p-[5px]">About</li>
                 </ul>
 
             </nav>
-
-        
         </div>
-        <div>My Food</div>
-        <div>Mail</div>
+
+        <div class="text-2xl">My Food</div>
+        <div class="text-2xl">Mail</div>
     </header>
     <section>
         <div class="grid grid-cols-4 gap-5 p-3 mt-56 text-center">
@@ -79,14 +79,14 @@
     </section>
 
     <section>
-        <div class="inline-block mt-11 mb-11 ml-96 justify-center mr-5 bg-slate-50 p-5">
-            <a href="#" class="to-black float-left justify-center ">&laquo;</a>
-            <a href="#food" class="active:text-white bg-black white hover:bg-slate-400 ">1</a>
-            <a href="#" class="p-10 m-10">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-            <a href="#" class="hover:bg-black white w-20">6</a>
+        <div class="inline-block mt-10 mb-5 ml-[400px] mr-5 bg-slate-50 p-5">
+            <a href="#" class=" ">&laquo;</a>
+            <a href="#food" class="text-white bg-black hover:bg-green-800 bg-[20px] group-hover:bg-slate-400 p-3 m-1">1</a>
+            <a href="#" class="p-3 m-1 hover:bg-black bg-[20px]">2</a>
+            <a href="#" class="p-3 m-1 hover:bg-black bg-[20px]">3</a>
+            <a href="#" class="p-3 m-1 hover:bg-black bg-[20px]">4</a>
+            <a href="#" class="p-3 m-1 hover:bg-black bg-[20px]">5</a>
+            <a href="#" class="hover:bg-black p-1 m-1">6</a>
 
             <a href="#">&raquo;</a>
            
@@ -95,7 +95,7 @@
 
     <section>
         <div class="w-full">
-            <h3 class="font-semibold  text-center text-lg">About Me, The Food Man</h3>
+            <h3 class="font-semibold  text-center text-lg m-10">About Me, The Food Man</h3>
             <img src="../img/chef.jpg" class=" object-contain w-[98%] mx-auto  h-[50%] ">
         </div>
         <div class="font-normal m-5 p-5 text-center">
@@ -117,13 +117,13 @@
         <div class="grid grid-cols-3 w-10/12 mx-10 gap-3 justify-center">
             <div class="m-6">
                 <h3 class="font-semibold w-10/12 ">FOOTER</h3>
-                <p class="m-1 p-1">Just me, myself and I, exploring the universe of unknownment.
+                <p>Just me, myself and I, exploring the universe of unknownment.
                     ultricies congue gravida diam non fringilla.</p>
-                <h6 class="m-1 p-1 font-semibold">powered by <a href="w3.css">w3.css</a></h6>
+                <h6 class="font-semibold">powered by <a href="w3.css">w3.css</a></h6>
             </div>
-            <div class="flex flex-col m-6">
+            <div class="flex flex-col m-6 gap-1">
                 <h3 class="font-semibold w-10/12 ">BLOG POSTS</h3>
-                <div class="m-2 gap-1">
+                <div>
                     <div class="flex">
                         <img class="w-[50px] h-[50px] mx-1" src="../img/cherries.jpg">
                         <div class="w-auto h-auto">
@@ -148,16 +148,16 @@
                 <h3 class="font-semibold w-10/12">POPULAR TAGS</h3> <br>
 
                 <div class="flex flex-wrap gap-1">
-                <p class="white bg-black">Food</p>
-                <p class="white bg-gray-500 border-b-2">Tea</p> 
-                <p class="white bg-gray-500 border-b-2">Dish</p>
-                <p class="white bg-gray-500 border-b-2">newyork</p>
-                <p class="white bg-gray-500 border-b-2">Dinner</p>
-                <p class="white bg-gray-500 border-b-2">Kigali</p>
-                <p class="white bg-gray-500 border-b-2">Fish</p>
-                <p class="white bg-gray-500 border-b-2">Duck</p>
-                <p class="white bg-gray-500 border-b-2">Cuisene</p>
-                <p class="white bg-gray-500 border-b-2">Ideas</p>
+                <p class="text-white bg-black">Food</p>
+                <p class="text-white bg-gray-500 border-b-2">Tea</p> 
+                <p class="text-white bg-gray-500 border-b-2">Dish</p>
+                <p class="text-white bg-gray-500 border-b-2">newyork</p>
+                <p class="text-white bg-gray-500 border-b-2">Dinner</p>
+                <p class="text-white bg-gray-500 border-b-2">Kigali</p>
+                <p class="text-white bg-gray-500 border-b-2">Fish</p>
+                <p class="text-white bg-gray-500 border-b-2">Duck</p>
+                <p class="text-white bg-gray-500 border-b-2">Cuisene</p>
+                <p class="text-white bg-gray-500 border-b-2">Ideas</p>
             </div>
         </div>
         
