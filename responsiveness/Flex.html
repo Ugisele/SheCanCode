@@ -10,25 +10,31 @@
 </head>
 
 <body>
-
-    <header>
+ 
+    <div class="header">
+    
         <div class="sidenav" >
-            <a onclick="menu_open()">☰</a>
+            <!-- <span class="fas fa-bars"></span> -->
+            <!-- <a href="nav">☰</a> -->
+        
+            ☰
             
-            <nav id="nav">
+            <nav class="nav"> 
                 <ul >
-                    <li class="show-hide" onclick="menu_exit()"> Close Menu</li>
-                    <li class="show-hide"><a href="#">Food</a></li>
-                    <li class="show-hide"><a href="#">About</a></li>
+                    <li class="show-hide">Close Menu</li>
+                    <li class="show-hide">Food</li>
+                    <li class="show-hide">About</li>
                 </ul>
 
-            </nav>
+            </nav> 
         </div>
+        
+            <div id="side">My Food</div>
+            <div id="side">Mail</div>
 
 
-        <h1 id="navfood">My Food</h1>
-        <h1>Mail</h1>
-    </header>
+    </div>
+
     <section>
         <div class="container">
             <div class="food-menu">
@@ -165,7 +171,14 @@
         </div>
     
 
-    <script src="script.js"></script>
+    <script>
+        $('.nav').hide();
+        $('.sidenav').click(function() {
+            $('.nav').toggle();
+            $(this).toggleClass("click");
+            
+        });
+    </script>
 
 </body>
 

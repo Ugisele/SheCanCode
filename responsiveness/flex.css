@@ -6,47 +6,101 @@
     font-size: 15px;
     line-height: 1.5;
     /* width: 100vw; */
-    max-width: 1000px;
-    margin: auto;
+    max-width: 100vw;
+    ;
+    /* margin: auto; */
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
+li {
+    list-style: none;
+    font-size: x-large;
+    text-wrap: nowrap;
+    padding: 4px;
+}
+
+li:hover {
+    background: #cccccc;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
     position: fixed;
     width: 100%;
-    background-color:white;
-    margin-top: 2px;
+    height: 50px;
+    top: 0;
+
+
+
 }
 
-header .sidenav {
-    width: 35%;
-    height: 30px;
+#side {
+
+    padding: auto;
+    font-size: 30px;
+    margin: auto;
+    margin-right: 10px;
+    top: 0;
+    /* position: absolute; */
+    /* display: flex; */
+    /* font-weight: normal; */
+    /* justify-content: space-between; */
+}
+
+.sidenav {
+    /* display: flex; */
+    /* position: absolute; */
+    /* top :15px;
+   left: 45px; */
+    padding-left: 50px;
+    margin-top: 20px;
+    width: 25px;
     cursor: pointer;
+    transition: left 0.5 ease;
+    position: fixed;
+
 }
 
-header .sidenav img {
+.sidenav:hover nav {
+    transform: translateX(-120%);
+    transition: 3s;
+}
+
+.nav::before {
+    transform: translateX(120%);
+
+}
+
+.nav {
+    position: absolute;
+    background-color: white;
+    height: 100vh;
+    width: 20vw;
+    left: 0;
+    padding: 40px;
+}
+
+.sidenav .click {
+    left: 200px;
+
+}
+
+.sidenav .click a::before {
+    content: '\food';
+}
+
+.sidenav a {
+    color: black;
+    /* font-size: 30px; */
+    text-decoration: none;
+}
+
+/* header .sidenav img {
     width: 50%;
     height: 40px;
-}
+} */
 
-header h1 {
-    font-size: 30px !important;
-    font-weight: normal;
-
-}
-
-#nav {
-    position: absolute;
-    font-size: 25px;
-    width: 40%;
-    min-width: 300px;
-    top: 0;
-    left: 0;
-
-}
 
 .container {
     display: grid;
@@ -58,15 +112,14 @@ header h1 {
 
 }
 
-.container .food-menu {
+ .food-menu {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     padding: 0;
-    margin: 0;
+    place-items: start;
 }
 
-.container .food-menu img {
+ .food-menu img {
 
     width: auto;
     height: auto;
@@ -75,10 +128,11 @@ header h1 {
 }
 
 .paging {
-    display: inline-block;
+    display: flex;
     margin: 20px 50px;
     padding: 50px;
-    align-items: center;
+    justify-content: center;
+
 }
 
 .paging a {
@@ -103,9 +157,6 @@ header h1 {
 .paging a:hover.active {
     background-color: rgb(220, 202, 202);
 }
-
-
-
 
 .about {
     width: 100%;
@@ -216,12 +267,20 @@ h3 {
 }
 
 @media (max-width: 590px) {
+    .header {
+        position: fixed;
+        width: 60%;
+        margin-bottom: 14px;
+        /* padding: 0; */
+
+    }
+
     .container {
         /* display: flex;
         flex-direction: column; */
         grid-template-columns: repeat(1, minmax(0, 1fr));
-        margin: 15px;
-        padding: 1px;
+        margin: 7px;
+        padding: 10px;
 
     }
 
