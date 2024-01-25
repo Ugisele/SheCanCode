@@ -11,17 +11,17 @@
 
 <body>
 
-    <header class="flex justify-between bg-white fixed flex-row w-[99%] top-0 h-[50px]">
+    <header class="flex justify-between bg-white fixed flex-row w-[99%] top-0 h-[50px] max-w-[1800px]">
         <div class="cursor-pointer pl-[50px]  transition[3s] before:translate-x-0[-120%] before:'\food'">
-                <img onclick="menu_show()"src="../img/menu-bar.png" alt="bars 3" class="w-6 h-6 ml-0">
-                <!-- <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="2 2 17 17" strokeWidth={1.0} stroke="currentColor" className="w-4 h-4">
+            <img onclick="menu_show()" src="../img/menu-bar.png" alt="bars 3" class="w-6 h-6 ml-0">
+            <!-- <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="2 2 17 17" strokeWidth={1.0} stroke="currentColor" className="w-4 h-4">
                     <path onclick="menu_show()" strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
                     
                 </svg> -->
-                  
-            
+
+
             <nav id="nav" class="hidden fixed bg-white text-black left-0">
-                <ul >
+                <ul>
                     <li onclick="menu_exit()" class="flex flex-nowrap text-lg  left-0 p-[5px]"> Close Menu</li>
                     <li class="flex flex-nowrap text-lg  left-0 p-[5px]">Food</li>
                     <li class="flex flex-nowrap text-lg  left-0 p-[5px]">About</li>
@@ -35,91 +35,93 @@
         <div class="text-2xl">Mail</div>
     </header>
     <main class="max-w-[1500px] mx-auto">
-    <section class="">
-        <div class="grid grid-cols-4 gap-5 p-3 mt-56 text-center">
-            <div class="flex flex-col gap-1">
-                <img src="../img/cherries.jpg" alt="cherries">
-                <h3 class="font-semibold" class="font-semibold">The Perfect Sandwich, A Real NYC Classic</h3 class="font-semibold">
-                <p class="">Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
-            </div>
+        <section class="grid">
+            <div class="grid lg:grid-cols-4 gap-5 p-3 mt-20 text-center sm:grid-cols-1 ">
+                <div class="flex flex-col gap-1">
+                    <img src="../img/cherries.jpg" alt="cherries">
+                    <h3 class="font-semibold" class="font-semibold">The Perfect Sandwich, A Real NYC Classic</h3
+                        class="font-semibold">
+                    <p class="">Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
+                </div>
 
-            <div class="flex flex-col gap-1">
-                <img src="../img/salmon.jpg" alt="">
-                <h3 class="font-semibold"> Once Again, Robust Wine and Vegetable Pasta</h3>
-                <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
-            </div>
-            <div class="flex flex-col gap-1">
-                <img src="../img/popsicle.jpg" alt="">
-                <h3 class="font-semibold">All I Need Is a Popsicle</h3>
-                <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
-            </div>
-            <div class="flex flex-col gap-1">
-                <img src="../img/sandwich.jpg" alt="cherries">
-                <h3 class="font-semibold">Salmon For Your Skin</h3>
-                <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
-            </div>
-            <div class="flex flex-col gap-1">
-                <img src="../img/steak.jpg" alt="">
-                <h3 class="font-semibold">Le French</h3>
-                <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
-            </div>
-            <div class="flex flex-col gap-1">
-                <img src="../img/sandwich.jpg" alt="">
-                <h3 class="font-semibold">The Perfect Sandwich, A Real NYC Classic</h3>
-                <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
-            </div>
-            <div class="flex flex-col gap-1">
-                <img src="../img/steak.jpg" alt="cherries">
+                <div class="flex flex-col gap-1">
+                    <img src="../img/salmon.jpg" alt="">
+                    <h3 class="font-semibold"> Once Again, Robust Wine and Vegetable Pasta</h3>
+                    <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <img src="../img/popsicle.jpg" alt="">
+                    <h3 class="font-semibold">All I Need Is a Popsicle</h3>
+                    <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <img src="../img/sandwich.jpg" alt="cherries">
+                    <h3 class="font-semibold">Salmon For Your Skin</h3>
+                    <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <img src="../img/steak.jpg" alt="">
+                    <h3 class="font-semibold">Le French</h3>
+                    <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <img src="../img/sandwich.jpg" alt="">
+                    <h3 class="font-semibold">The Perfect Sandwich, A Real NYC Classic</h3>
+                    <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <img src="../img/steak.jpg" alt="cherries">
                     <h3 class="font-semibold">Let Me Tell You About This Steak</h3>
                     <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
-                
+
+                </div>
+
+                <div class="flex flex-col gap-1">
+                    <img src="../img/wine.jpg" alt="">
+                    <h3 class="font-semibold">Cherries, interrupted</h3>
+                    <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
+                </div>
+
             </div>
+        </section>
 
-            <div class="flex flex-col gap-1">
-                <img src="../img/wine.jpg" alt="">
-                <h3 class="font-semibold">Cherries, interrupted</h3>
-                <p>Lorem ipsum dolor sit amet consectetillo aperiam placeat harum atque?</p>
+        <section>
+            <div class="flex justify-center content-center bg-slate-50 p-5">
+                <a href="#" class="p-3 m-1 hover:bg-black ">&laquo;</a>
+                <a href="#food"
+                    class="text-white bg-black hover:bg-green-800 bg-[20px] group-hover:bg-slate-400 p-3 m-1">1</a>
+                <a href="#food" class="p-3 m-1 hover:bg-black bg-[20px]">2</a>
+                <a href="#" class="p-3 m-1 hover:bg-black bg-[20px]">3</a>
+                <a href="#" class="p-3 m-1 hover:bg-black bg-[20px]">4</a>
+                <a href="#" class="p-3 m-1 hover:bg-black bg-[20px]">5</a>
+                <a href="#" class="hover:bg-black p-3 m-1">6</a>
+                <a href="#" class="p-3 m-1 hover:bg-black">&raquo;</a>
+
             </div>
+        </section>
 
-        </div>
-    </section>
+        <section>
+            <div class="lg:w-full  md:object-center:ml-10:mr-10 ">
+                <h3 class="font-semibold  text-center text-lg m-10">About Me, The Food Man</h3>
+                <img src="../img/chef.jpg" class=" object-contain w-[98%] mx-auto h-[50%]">
+            </div>
+            <div class="font-normal m-5 p-5 text-center">
+                <h3 class="font-semibold m-2  text-lg">I am Who I Am!</h3>
+                <p><em>With Passion For Real, Good Food</em></p>
+                <p>Just me, myself and I, exploring the universe of
+                    unknownment. I have a heart of love and an interest
+                    of lorem ipsum and mauris neque quam blog. I want to
+                    share my world with you. Praesent tincidunt sed tellus
+                    ut rutrum. Sed vitae justo condimentum, porta lectus
+                    vitae, ultricies congue gravida diam non fringilla.
+                    Praesent tincidunt sed tellus ut rutrum. Sed vitae
+                    justo condimentum, porta lectus vitae, ultricies
+                    congue gravida diam non fringilla.</p>
 
-    <section>
-        <div class="flex justify-center content-center bg-slate-50 p-5">
-            <a href="#" class="p-3 m-1 hover:bg-black ">&laquo;</a>
-            <a href="#food" class="text-white bg-black hover:bg-green-800 bg-[20px] group-hover:bg-slate-400 p-3 m-1">1</a>
-            <a href="#food" class="p-3 m-1 hover:bg-black bg-[20px]">2</a>
-            <a href="#" class="p-3 m-1 hover:bg-black bg-[20px]">3</a>
-            <a href="#" class="p-3 m-1 hover:bg-black bg-[20px]">4</a>
-            <a href="#" class="p-3 m-1 hover:bg-black bg-[20px]">5</a>
-            <a href="#" class="hover:bg-black p-3 m-1">6</a>
-            <a href="#" class="p-3 m-1 hover:bg-black">&raquo;</a>
-           
-        </div>
-    </section>
+            </div>
+        </section>
 
-    <section>
-        <div class="w-full">
-            <h3 class="font-semibold  text-center text-lg m-10">About Me, The Food Man</h3>
-            <img src="../img/chef.jpg" class=" object-contain w-[98%] mx-auto  h-[50%] ">
-        </div>
-        <div class="font-normal m-5 p-5 text-center">
-            <h3 class="font-semibold m-2  text-lg">I am Who I Am!</h3>
-            <p><em >With Passion For Real, Good Food</em></p>
-            <p>Just me, myself and I, exploring the universe of
-                unknownment. I have a heart of love and an interest
-                of lorem ipsum and mauris neque quam blog. I want to
-                share my world with you. Praesent tincidunt sed tellus
-                ut rutrum. Sed vitae justo condimentum, porta lectus
-                vitae, ultricies congue gravida diam non fringilla.
-                Praesent tincidunt sed tellus ut rutrum. Sed vitae
-                justo condimentum, porta lectus vitae, ultricies
-                congue gravida diam non fringilla.</p>
-
-        </div>
-    </section>
-    
-        <div class="grid grid-cols-3 w-10/12 mx-10 gap-3 justify-center">
+        <div class="grid lg:grid-cols-3 sm:grid-cols-1 w-10/12 mx-10 gap-3 justify-center">
             <div class="m-6">
                 <h3 class="font-semibold w-10/12 ">FOOTER</h3>
                 <p>Just me, myself and I, exploring the universe of unknownment.
@@ -138,14 +140,14 @@
                     </div>
                     <hr>
                     <div class="flex">
-                        <img class="w-[50px] h-[50px] mx-1" src="../img/steak.jpg" >
+                        <img class="w-[50px] h-[50px] mx-1" src="../img/steak.jpg">
                         <div class="w-auto h-auto">
                             <h5 class="font-semibold text-lg">Lorem</h5>
                             <p>Just me, myself and I, exploring the universe </p>
                         </div>
-                
+
                     </div>
- 
+
                 </div>
 
             </div>
@@ -153,32 +155,32 @@
                 <h3 class="font-semibold w-10/12">POPULAR TAGS</h3> <br>
 
                 <div class="flex flex-wrap gap-1">
-                <p class="text-white bg-black">Food</p>
-                <p class="text-white bg-gray-500 border-b-2">Tea</p> 
-                <p class="text-white bg-gray-500 border-b-2">Dish</p>
-                <p class="text-white bg-gray-500 border-b-2">newyork</p>
-                <p class="text-white bg-gray-500 border-b-2">Dinner</p>
-                <p class="text-white bg-gray-500 border-b-2">Kigali</p>
-                <p class="text-white bg-gray-500 border-b-2">Fish</p>
-                <p class="text-white bg-gray-500 border-b-2">Duck</p>
-                <p class="text-white bg-gray-500 border-b-2">Cuisene</p>
-                <p class="text-white bg-gray-500 border-b-2">Ideas</p>
+                    <p class="text-white bg-black">Food</p>
+                    <p class="text-white bg-gray-500 border-b-2">Tea</p>
+                    <p class="text-white bg-gray-500 border-b-2">Dish</p>
+                    <p class="text-white bg-gray-500 border-b-2">newyork</p>
+                    <p class="text-white bg-gray-500 border-b-2">Dinner</p>
+                    <p class="text-white bg-gray-500 border-b-2">Kigali</p>
+                    <p class="text-white bg-gray-500 border-b-2">Fish</p>
+                    <p class="text-white bg-gray-500 border-b-2">Duck</p>
+                    <p class="text-white bg-gray-500 border-b-2">Cuisene</p>
+                    <p class="text-white bg-gray-500 border-b-2">Ideas</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    
-      
-</main>
-<script>
-    var nav = document.getElementById("nav")
-    function menu_show(){
-        nav.style.display= "block";
-    }
-    function menu_exit(){
-        nav.style.display = "none";
-    }
-</script>
+
+
+    </main>
+    <script>
+        var nav = document.getElementById("nav")
+        function menu_show() {
+            nav.style.display = "block";
+        }
+        function menu_exit() {
+            nav.style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
