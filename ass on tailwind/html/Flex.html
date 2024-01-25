@@ -12,18 +12,19 @@
 <body>
 
     <header class="flex justify-between bg-white fixed flex-row w-[99%] top-0 h-[50px]">
-        <div class="cursor-pointer pl-[50px] hover:translate-x-[-200%] transition[3s] before:translate-x-0[-120%] before:'\food'">
-
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="2 2 17 17" strokeWidth={1.0} stroke="currentColor" className="w-4 h-4">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-                  </svg>
+        <div class="cursor-pointer pl-[50px]  transition[3s] before:translate-x-0[-120%] before:'\food'">
+                <img onclick="menu_show()"src="../img/menu-bar.png" alt="bars 3" class="w-6 h-6 ml-0">
+                <!-- <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="2 2 17 17" strokeWidth={1.0} stroke="currentColor" className="w-4 h-4">
+                    <path onclick="menu_show()" strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                    
+                </svg> -->
                   
             
-            <nav class=" hover:translate-x-[-200%] transition[3s] before:translate-x-0[-120%] left-0">
+            <nav id="nav" class="hidden fixed bg-white text-black left-0">
                 <ul >
-                    <li class="flex flex-nowrap text-lg hover:bg-cyan-600 left-0 p-[5px]"> Close Menu</li>
-                    <li class="flex flex-nowrap text-lg hover:bg-cyan-600 left-0 p-[5px]">Food</li>
-                    <li class="flex flex-nowrap text-lg hover:bg-cyan-600 left-0 p-[5px]">About</li>
+                    <li onclick="menu_exit()" class="flex flex-nowrap text-lg  left-0 p-[5px]"> Close Menu</li>
+                    <li class="flex flex-nowrap text-lg  left-0 p-[5px]">Food</li>
+                    <li class="flex flex-nowrap text-lg  left-0 p-[5px]">About</li>
                 </ul>
 
 
@@ -169,7 +170,15 @@
     
       
 </main>
-
+<script>
+    var nav = document.getElementById("nav")
+    function menu_show(){
+        nav.style.display= "block";
+    }
+    function menu_exit(){
+        nav.style.display = "none";
+    }
+</script>
 </body>
 
 </html>
