@@ -1,47 +1,117 @@
 html,
 body {
-    max-width: 100%;
-    /* margin: 5px; */
+    max-width: 1500px;
+    max-height:auto ;
+    width: 100vw;
+    margin: 10px;
     padding: 0;
-    height: auto;
-
+    height: 100vh;
+    font-size: 15px;
     
 }
-
-/* For screens smaller than 600px */
+/* ...............//NAVBAR\\ ...........*/
 
 .wrap-bar{
     position: fixed;
     background-color: white;
-    width: 99.2%;
+    width: 99%;
     height: 50px;
     top: 0;
-    /* display: flex; */
-    /* justify-content: start; */
     
 }
-
 #br {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    /* padding: 5px; */
+    padding: 3px;
+    margin: 3px;
+    font-size: 20px;
 
 }
 #nav{
 
     display: flex;
-    gap: 15px;
+    gap: 30px;
 
 }
 
 li{
-    display: flex;
+    /* display: flex; */
+    list-style: none;
     
 }
+.home{
+    background-image: url(img/bg1.jpg);
+    width: 96%;
+    height: 800px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    /* margin: 15px; */
+    font-weight: normal;
+}
+#home{
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+.projects{
 
-li a:hover {
-    background-color: #c6b7b7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
 }
 
+.container-grid{
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+    width: 96%;
+    gap:5px;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+
+}
+.col-3{
+    margin: auto;
+    width: 24%;  
+    align-items: center;  
+}
+.col-3 img{
+    width: 100%;
+    position: relative;
+}
+.sub{
+    width: 100px ;
+    height: 20px;
+    background-color: black;
+    /* position: ; */
+    color: white;
+    top: 0;
+    padding: 0 5px 0;
+    align-items: start;
+
+
+}
+@media (max-width:600px) {
+    #nav{
+        visibility: hidden;
+    }
+    #b{
+        display: flex;
+    }
+    .home{
+        width: 92%;
+        height: 400px;
+        border-radius: 3px;
+    }
+    .home h2{
+        /* visibility: hidden; */
+    }
+}
 
