@@ -1,12 +1,16 @@
 `use string`
 // export const dataElement = 'ateryer';
 
-///CURRENT DAY
+//////////////////////////////////CURRENT DAY
 
-// const currentDay = new Date();
-// console.log(`Today: ${currentDay}` );
+const currentDate = new Date();
+const currentDay=currentDate.getDay();
+const currentHour = currentDate.getHours();
+const currentmin = currentDate.getMinutes()
 
-///Largest number
+console.log(`Today: ${currentHour} ${currentmin}` );
+
+////////////////////////////////Largest number
 
 function largest(a, b, c) {
     if(a > b > c){
@@ -21,18 +25,18 @@ function largest(a, b, c) {
 console.log(largest(2,6,9));
     
 
-////50 -- 99
+////////////////////////////////// ////50 -- 99
 
 const nbr = (num1, num2,num3) => {
 
-if ((num1 >= 50 && num1<=90) || (num2 <= 50 && num2 >= 90)) {
+if ((num1 >= 50 && num1<=90) || (num2 <= 50 && num2 >= 90) || (num3 === 50 && num3 !== 90) ) {
     return true;
 }else{
     return false
 }
 
 }
-console.log(nbr(2,3,66));
+console.log(nbr(886,966,5));
 
 
 

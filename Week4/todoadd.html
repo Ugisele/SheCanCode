@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body class="m-9">
+    <section>
+
+        <label for="name to add" class="mb-3 font-bold">Add to do</label>
+        <ul class="flex gap-3 justify-between">
+            <input id="input"
+                class=" fa fa-check  lg:w-full rounded-md border-r-2 border-b-2 border-t-2 border-l-2">
+            <button type="button" id="sub" class="bg-[#FF6A16] m-9  h-12 w-36 text-white rounded-md p-2 text-lg font-bold">ADD</button>
+            <button type="delete" id="del" class="fa fa-trash bg-[#FF6A16] m-9  h-12 w-36 text-white rounded-md text-lg font-bold">Delete</button>
+            <!-- <input id="display"
+                class="fa fa-check  sm:w-full rounded-md border-r-2 border-b-2 border-t-2 border-l-2"> -->
+        </ul>
+    </section>
+
+    <script>
+        const input = document.getElementById('input')
+        const sub = document.getElementById('sub')
+        const del = document.getElementById('del')
+
+        let arr = [];
+        const addToList = (e) =>{
+            e.preventDefault()
+            arr.push({name:input.value , complete: false})
+            
+        }
+       
+        // const joint = () =>{
+        //     arr.join()
+        // }
+        
+        console.log(arr);
+
+        sub.addEventListener('click', addToList) 
+
+        const deleteFromList = () => {
+            arr.pop({name:input.value , complete: false})
+        }
+        del.addEventListener('click', deleteFromList)
+
+
+
+
+        
+
+        // const input = document.getElementById('input');
+        // console.log('input');
+        // const arr = "{'firsname': 'gislee', 'lastname': 'hellloeo','age':60}"
+        // const todoArr = JSON.stringify(arr)
+        // localStorage.setItem('gislee', 'hellloeo')
+        // console.log(arr);
+        // // localStorage.clear()
+
+        // const inp = document.getElementsByTagName("label").innerHTML 
+        // for (let i = 0; i < inp; i++) {
+        //      inp[i].innerHTML = 'i prefer pizza'
+            
+        // }
+        // console.log(inp);
+    </script>
+
+</body>
+
+</html>

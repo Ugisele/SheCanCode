@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div class="bg-blue-950 flex justify-between h-28 mb-6">
+            <div><a href="index.html"><img class="w-[100px] h-[100px] ml-3" src="./img/logo.png" alt="logo"></a></div>
+            <div> <a href="todoadd.html">
+                    <h4
+                        class="bg-orange-500 m-8 flex gap-3 h-12 w-36 text-white  rounded-md text-center p-2 text-lg font-bold">
+                        <span class="text-black font-bold text-2xl "> &plus;</span>Add todo
+                    </h4>
+                </a> </div>
+
+        </div>
+
+        <div>
+            <label for="name to add" class="m-3 font-bold">Name of Pizza</label>
+            <input id="input"
+                class=" bg-gray-100 sm:w-[600px] lg:w-[1200px] rounded-md border-r-2 border-b-2 border-t-2 border-l-2 p-3 m-3">
+        </div>
+
+        <div class="float-end mr-9">
+            <a href="todoadd.html">
+                <h4 class="bg-[#FF6A16] m-9 flex gap-3 h-12 w-36 text-white rounded-md p-2 text-lg font-bold" id="lab">
+                    Add todo</h4>
+            </a>
+        </div>
+    </section>
+
+    <script>
+        // const input = document.getElementById('input')
+        // const h4 = document.getElementById('lab')
+
+        // let arr = [];
+        // const addToList = (e) =>{
+        //     e.preventDefault()
+        //     arr.push({name:input.value , complete: false})
+            
+        // }
+        // const joint = () =>{
+        //     arr.join()
+        // }
+        
+        // console.log(arr);
+        // lab.addEventListener('click', addToList) 
+
+        // const input = document.getElementById('input');
+        // console.log('input');
+        // const arr = "{'firsname': 'gislee', 'lastname': 'hellloeo','age':60}"
+        // const todoArr = JSON.stringify(arr)
+
+        // localStorage.setItem('gislee', 'hellloeo')
+        // console.log(arr);
+        // localStorage.clear()
+
+        // const inp = document.getElementsByTagName("label").innerHTML 
+        // for (let i = 0; i < inp; i++) {
+        //      inp[i].innerHTML = 'i prefer pizza'
+            
+        // }
+        // console.log(inp);
+    </script>
+
+</body>
+
+</html>
