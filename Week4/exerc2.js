@@ -1,5 +1,4 @@
 ///create a task manager where user can add and remove and mark task as completed
-
 //a) Add task to the task list
 // b) Remove task from task list
 // c) mark task as completed
